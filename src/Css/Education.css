@@ -1,0 +1,140 @@
+.education{
+    height : 100% ; 
+    width : 100% ; 
+    background-color:rgb(31,27,44) ;
+    box-sizing: border-box;
+    overflow: hidden;
+    position : relative ; 
+}
+.circle1{
+    height : 33% ; 
+    width : 300px ; 
+    position : absolute  ;
+    top : 0% ;
+    left : 40% ; 
+    border-right : 15px dashed white ; 
+    box-sizing: border-box;
+    border-radius : 50% ; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.circle1 > div{ 
+    height : 70px ; 
+    width : 150% ;
+    box-sizing: border-box;
+    border-bottom : 1px solid yellow ;
+    color  : white ;
+    font-size : .4rem ;
+    margin-top : 20% ; 
+    margin-right : -1% ;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.circle1-detail > div{
+    height : 30% ; 
+    width : 100% ; 
+    box-sizing: border-box;
+}
+
+
+.circle1::after{
+    content: "";
+    height: 25px;
+    width: 25px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 46%;
+    right: -7%;
+}
+
+/* circle two */
+.circle2{
+    height: 40%;
+    width: 400px;
+    position: absolute;
+    top: 32%;
+    left: 42%;
+    border-left: 15px dashed white; 
+    box-sizing: border-box;
+    border-radius: 50%; 
+    display: flex;
+    flex-direction: column;
+}
+.circle2-detail{
+    height : 80px ; 
+    width : 120% ;
+    box-sizing: border-box;
+    border-bottom : 1px solid yellow ;
+    color  : white ;
+    font-size : .4rem ;
+    margin-top : 20% ; 
+    margin-right : -1% ;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+.circle2-detail > div{
+    height : 30% ; 
+    width : 100% ; 
+    box-sizing: border-box;
+}
+
+.circle2::before{
+    content: "";
+    height: 25px;
+    width: 25px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 46%;
+    left: -5%;
+} 
+.circle3{
+    height: 33%;
+    width: 300px;
+    position: absolute;
+    top: 71%;
+    left: 40%;
+    border-right: 15px dashed white; 
+    box-sizing: border-box;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.circle3-detail{
+    height : 70px ; 
+    width : 120% ;
+    box-sizing: border-box;
+    border-bottom : 1px solid yellow ;
+    color  : white ;
+    font-size : .4rem ;
+    margin-top : 20% ; 
+    margin-right : -1% ;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding : 0px ; 
+}
+.circle3-detail > div{
+    height : 30% ; 
+    width : 100% ; 
+    box-sizing: border-box;
+    padding : 0px ; 
+} 
+
+.circle3::after{
+    content: "";
+    height: 25px;
+    width: 25px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 46%;
+    right: -7%;
+} 

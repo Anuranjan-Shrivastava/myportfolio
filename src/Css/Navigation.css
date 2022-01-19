@@ -1,0 +1,78 @@
+.navigation{
+    height : 100% ; 
+    width : 100% ; 
+    box-sizing: border-box;
+    background-color: rgb(35,34,52);
+    font-size : .2rem ;
+}
+
+
+#linkToTab{
+    text-decoration: none;
+    color : white ;
+}
+#A{
+    color : rgb(5,253,216)
+}
+
+.navigation-home {
+    height : 120px ; 
+    width : 100% ; 
+
+    box-sizing: border-box;
+
+    /* background-color: grey; */
+
+   
+
+    font-family: 'Sansita Swashed', cursive;
+    font-size : 400% ;
+    text-align: center;
+    line-height: 120px;
+    color : white ; 
+
+
+    /* upated css after root(html) font fixing */
+    font-size : 1.3rem ; 
+}
+
+.navigation-difftab {
+    height : 300px ; 
+    width : 100% ; 
+    box-sizing: border-box;
+
+    margin-top : 80px ; 
+
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Caveat', cursive;
+}
+.navigation-difftab > div { 
+    height : 50px ; 
+    width : 100% ; 
+
+    text-align: center;
+    line-height: 50px;
+    /* font-size : 150% ; */
+    font-size : 1.5rem ;
+
+    transition : .1s ;
+
+     /* upated css after root(html) font fixing */
+     font-size : .6rem ; 
+}
+
+/* @media  screen and (max-width : 1320px) {
+
+    .navigation-home {
+        /* upated css after root(html) font fixing 
+        font-size : 1.1rem ; 
+    }
+    .navigation-difftab > div { 
+         /* upated css after root(html) font fixing 
+         font-size : .5rem ; 
+    }
+    
+} */

@@ -1,0 +1,69 @@
+.contact{
+    height : 100% ; 
+    width : 100% ; 
+    background-color: rgb(31,27,44);
+    box-sizing: border-box;
+    color : white ; 
+   
+}
+#senderForm{
+     height : 90% ; 
+     width : 40% ; 
+     
+     margin-left : 20px ; 
+
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     padding-left : 40px ; 
+     box-sizing: border-box;
+
+}
+
+.inputTags {
+    background-color: rgb(35,34,52);;
+    font-size : .5rem ;
+    color : white ;
+    outline: none;
+    border: none;
+    margin-bottom : 10px ; 
+}
+
+#senderName {
+    height : 50px ; 
+    width : 300px ; 
+   
+}
+
+
+#senderEmail {
+    height : 50px ; 
+    width : 350px ; 
+    
+}
+
+#senderContact {
+    height : 50px ; 
+    width : 250px ; 
+
+}
+textarea { 
+    resize: none;
+}
+#senderMessage {
+    resize:  none;
+    height : 150px ; 
+    width : 400px ; 
+    
+}
+
+#sendButton{
+    height :50px ; 
+    width : 200px ; 
+    background-color: grey;
+    font-size : .4rem ;
+    font-family: 'Sansita Swashed', cursive;
+    color :  rgb(5,253,216) ; 
+    font-weight: 400;
+}
+

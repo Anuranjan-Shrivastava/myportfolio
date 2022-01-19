@@ -1,0 +1,234 @@
+.skill{
+    height : 100% ; 
+    width : 100% ; 
+    background-color: rgb(31,27,44);
+    box-sizing: border-box;
+}
+.smallSkill{
+    height : 90% ; 
+    width : 90% ; 
+    box-sizing: border-box;
+    /* border : 1px solid white ;  */
+    margin : auto ; 
+    display: flex;
+    flex-direction: row;
+    color : white ;
+    position: relative;
+    top : 5% ; 
+    background-color: rgb(31,27,44);
+}
+
+.smallSkill > div{
+    height : 100% ; 
+    width : 50% ; 
+    box-sizing: border-box;
+    /* border : .5px solid white ;  */
+}
+
+#skillBox1{
+    display: flex;
+    flex-direction: column;
+    color : white ; 
+    align-items: flex-end;
+    /* text-align: right; */
+}
+
+/* Skill Box Helper CSS */
+.skillBoxHelper{
+    height : 10px ; 
+    width : 100% ; 
+    box-sizing: border-box;
+    /* border : 1px solid white ;  */
+    display: flex;
+    flex-direction: row;
+}
+.skillBoxHelper > div{
+    height: 100% ; 
+    box-sizing: border-box;
+    width : 20% ; 
+    /* border : .1px solid white ;  */
+}
+#two20::after{
+   content  : "20%" ;
+   font-size : .3rem ;
+   position: relative;
+   top : -0.8rem ; ; 
+   left : 95% ; 
+}
+#two40::after{
+    content  : "40%" ;
+    font-size : .3rem ;
+    position: relative;
+    top : -0.8rem ; ;  
+    left : 95% ; 
+ }
+ #two60::after{
+    content  : "60%" ;
+    font-size : .3rem ;
+    position: relative;
+    top : -0.8rem ; ; 
+    left : 95% ; 
+ }
+ #two80::after{
+    content  : "80%" ;
+    font-size : .3rem ;
+   position: relative;
+   top : -0.8rem ; ; ;  
+    left : 95% ; 
+ }
+ #two100::after{
+    content  : "100%" ;
+    font-size : .3rem ;
+   position: relative;
+   top : -0.8rem ; ; 
+    left : 90% ; 
+ }
+ .skillBoxHelperOne{
+    flex-direction: row-reverse;
+ }
+#one20::after{
+    content  : "20%" ;
+    font-size : .3rem ;
+    position: relative;
+    top : -0.8rem ; 
+    left : 0% ; 
+}
+#one40::after{
+     content  : "40%" ;
+     font-size : .3rem ;
+    position: relative;
+    top : -0.8rem ; 
+   left : 0% ; 
+}
+#one60::after{
+   content  : "60%" ;
+   font-size : .3rem ;
+   position: relative;
+   top : -0.8rem ; 
+   left : 0% ; 
+}
+#one80::after{
+   content  : "80%" ;
+   font-size : .3rem ;
+   position: relative;
+   top : -0.8rem ; 
+   left : 0% ; 
+}
+#one100::after{
+   content  : "100%" ;
+   font-size : .3rem ;
+    position: relative;
+    top : -0.8rem ; 
+   left : 0% ; 
+}
+
+
+
+
+
+
+
+
+.skillContainer{
+    height: 7%;
+    width : 100% ; 
+    box-sizing: border-box;
+    /* border : .5px solid white ;  */
+}
+.skillContainer > div{
+    height : 100% ; 
+    text-align: center;
+    font-size: .5rem;
+    background-color: orange;
+    line-height : 50px ; 
+    transition: .5s;
+}
+
+#C{
+    width : 8%  ; 
+}
+#C:hover{
+    width : 75%  ; 
+    font-size: .8rem;
+}
+#CSS{
+    width : 10%  ; 
+}
+#CSS:hover{
+    width : 80%  ; 
+    font-size: .8rem;
+}
+#Nodejs{
+    width : 15%  ; 
+}
+#Nodejs:hover{
+    width : 65%  ; 
+    font-size: .7rem;
+}
+#Reactjs{
+    width : 15%  ; 
+}
+#Reactjs:hover{
+    width : 80%  ; 
+    font-size: .7rem;
+}
+#DataStructure{
+    width : 30%  ; 
+}
+#DataStructure:hover{
+    width : 80%  ; 
+    font-size: .7rem;
+}
+#Algorithm{
+    width : 20%  ; 
+}
+#Algorithm:hover{
+    width : 80%  ; 
+    font-size: .7rem;
+}
+
+
+/* ******************************** */
+.leftSideContainer{ 
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+/* Left Side Container */
+#C2{
+    width : 10%  ;  
+}
+#C2:hover{
+    width : 80% ; 
+    font-size: 0.7rem;
+}
+#HTML{
+    width : 14%  ; 
+}
+#HTML:hover{
+    width : 80% ; 
+    font-size: 0.7rem;
+}
+#Javascript{
+    width : 20%  ; 
+}
+#Javascript:hover{
+    width : 70% ; 
+    font-size: 0.7rem;
+}
+#Expressjs{
+    width : 20%  ; 
+}
+#Expressjs:hover{
+    width : 60% ; 
+    font-size: 0.7rem;
+}
+#MongoDB{
+    width : 21%  ; 
+}
+#MongoDB:hover{
+    width : 60% ; 
+    font-size: 0.7rem;
+}

@@ -1,0 +1,240 @@
+.home{
+    height : 100% ; 
+    width : 100% ; 
+    box-sizing: border-box;
+    background-color: brown;
+   
+}
+.home-main{
+    height : 100% ;
+    width : 100%; 
+    box-sizing: border-box;
+    background-color:rgb(29,29,29);
+
+    /* position: relative;
+    top : 0% ; 
+    left : 0% ;  */
+
+    /* updated css  */
+    padding-left : 100px ; 
+    padding-top : 100px ; 
+}
+
+/* Home CONTENT CSS */
+/* .home-main::before{
+    content : "<html>" ; 
+    font-family: 'La Belle Aurore',cursive;
+    font-style: italic;
+    color: #515152;
+    font-size: .3rem;
+    position: absolute;
+    margin-top: 3%;
+    left: 2%;
+
+} */
+
+.greet::before {
+    content: '<html>';
+    font-family: 'La Belle Aurore',cursive;
+    font-style: italic;
+    color: rgb(93,93,93);
+    font-size: .3rem;
+    /* position: relative;
+    top : -130px ; 
+    left : -50px ;  */
+    position: absolute;
+    top : -20px ; 
+    left : -60px ; 
+}
+.greet{
+    min-height : 90px ; 
+    width : 500px ;  
+    box-sizing: border-box;
+    /* border : 1px solid white ; */
+    /* position: absolute;
+    top : 10% ; 
+    left : 8% ;  */
+    /* background-color: beige; */
+
+    /* updated css */
+    position: relative;
+   
+}
+.greet::after {
+    content: '<body>';
+    font-family: 'La Belle Aurore',cursive;
+    font-style: italic;
+    color: rgb(93,93,93);
+    font-size: .3rem;
+    /* position: relative;
+    top: -90px;
+    left: -340px; */
+    position: absolute;
+    top: 0px;
+    left: -40px;
+}
+
+
+
+
+.words {
+    color: rgb(31,27,44);
+    font-size: 0;
+    line-height: 1.8;
+    font-family: "Archivo Black", sans-serif;
+}
+
+.words span {
+    font-size: 1.7rem;
+    display: inline-block;
+    animation: move 3s ease-in-out infinite;
+}
+@keyframes move {
+    0% {
+      transform: translate(-30%, 0);
+    }
+    50% {
+        color :   white ;  
+        text-shadow: 0 25px 25px rgba(31,27,44,1);
+    }
+    100% {
+        transform: translate(30%, 0);
+    }
+}
+
+.words span:nth-child(2) {
+  animation-delay: 0.7s;
+}
+
+.words span:nth-child(3) {
+  animation-delay: 1.4s;
+}
+
+.words span:nth-child(4) {
+  animation-delay: 2s;
+}
+
+.words span:nth-child(5) {
+  animation-delay: 2.5s;
+}
+
+.words span:nth-child(6) {
+  animation-delay: 3s;
+}
+
+.words span:nth-child(7) {
+  animation-delay: 3.5s;
+}
+
+.name{
+    color : white ; 
+    height : auto ; 
+    width : 700px ; 
+    /* position  : absolute ; 
+    top : 26% ; 
+    left : 7% ;  */
+    font-size : 700px ;
+    /* background-color: rebeccapurple; */
+
+    /* updated css */
+    font-size : 2rem ;
+   
+}
+.name span{
+    display: inline-block;
+}
+
+.name span:hover{
+    color : rgb(5,253,216)
+}
+
+.firstLetter{
+    color : rgb(5,253,216) ;
+}
+
+.designation::before{
+    content: '</body>';
+    font-family: 'La Belle Aurore',cursive;
+    font-style: italic;
+    color: #515152;
+    font-size: .3rem;
+    position: absolute;
+    /* margin-top: 10%; */
+    top : 70px ; 
+    left : -40px ; 
+}
+
+.designation{
+    height: auto;
+    width : auto ;
+    /* position : absolute ; 
+    top : 60% ;
+    left : 7% ;  */
+    color  :  linen ;
+    font-size : 3rem ;
+    font-family: 'Mochiy Pop P One', sans-serif;
+
+    /* updated css to make responsive */
+    font-size : 1rem ;
+    position: relative;
+  
+
+    /* background-color: yellow; */
+}
+
+
+.designation::after{
+    content: '</html>';
+    font-family: 'La Belle Aurore',cursive;
+    font-style: italic;
+    color: #515152;
+    font-size: .3rem;
+    position: absolute;
+    top : 90px ; 
+    left: -60px;
+}
+
+
+/* LEFT EYE CSS */
+.face{
+    height : 150px ; 
+    width : 200px ; 
+    /* border : 2px solid white ;  */
+    margin : auto ; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position : absolute ; 
+    top : 0% ; 
+    right : 0% ; 
+}
+
+.eye{
+    height : 100px ; 
+    width : 100px ; 
+    border : 2px solid white ; 
+    border-radius: 50% ;
+    position : relative ;
+    background-color: white; 
+    /* background-color: rgb(31,27,44);  */
+}
+
+.eye::before{
+    content: "";
+    position : absolute ;
+    top : 40% ; 
+    left : 10% ; 
+    height : 30px ; 
+    width : 30px ; 
+    background-color: black ;
+    border-radius : 50%  ;
+    transition : .2s ; 
+}
+
+/* EYE CSS COMPLETE */
+
+
+
+
+  

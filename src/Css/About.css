@@ -1,0 +1,232 @@
+.about{
+    min-height : 100% ; 
+    width : 100% ; 
+    box-sizing: border-box;
+    background-color:rgb(31,27,44) ;
+  
+
+     /* updated css to make responsive*/
+}
+
+.about-container {
+    height : auto ; 
+    width : auto ; 
+    display : flex ; 
+    flex-direction: row;
+    background-color:rgb(31,27,44) ;
+}
+
+.about-content{
+   height : 100% ; 
+   width : 58% ; 
+
+
+   display: inline-block;
+   box-sizing: border-box;
+   /* border : 1px solid white ;  */
+   background-color:rgb(31,27,44) ;
+
+   padding-left : 1.2rem ;
+   padding-top : 1rem ;
+  
+
+   /* updated css to make responsive*/
+
+}
+
+.about-content > div{
+    /* border : 1px solid white ;  */
+    box-sizing: border-box;
+    min-height : 100px ; 
+    width : 100% ; 
+    /* position: absolute;
+    left : 8% ;  */
+}
+
+.about-content-helper-1{
+    width : 100px ; 
+    position: relative;
+}
+.about-content-helper-1::before{
+   content : "<html>" ; 
+   font-family: 'La Belle Aurore',cursive;
+   font-style: italic;
+   color: #515152;
+   font-size: .3rem;
+   position : absolute ; 
+   top : 0px ; 
+   left : -1rem ; 
+   
+}
+
+.about-content-helper-1::after{
+    content : "<body>" ; 
+    font-family: 'La Belle Aurore',cursive;
+    font-style: italic;
+    color: #515152;
+    font-size: .3rem;
+    position : absolute ; 
+    top : .7rem ; 
+    left : -0.5rem; 
+    
+ }
+
+.about-content-heading{
+    height : 100px ; 
+    width : 500px ; 
+    color : rgb(5,253,216) ; 
+    font-size : 1.5rem ;
+    text-align: left;
+    line-height : 100px ; 
+    letter-spacing: -2px;
+    margin : 0px ; 
+
+
+    /* positin relative for before & after */
+    position: relative;
+}
+.about-content-heading::before{
+    content : "<h1>" ; 
+    font-family: 'La Belle Aurore',cursive;
+    font-style: italic;
+    color: #515152;
+    font-size: .3rem;
+    position : absolute ; 
+    top : -1rem ; 
+    left : -0.3rem  ; 
+ 
+    
+ }
+ .about-content-heading::after{
+    content : "</h1>" ; 
+    font-family: 'La Belle Aurore',cursive;
+    font-style: italic;
+    color: #515152;
+    color : white ; 
+    font-size: .3rem;
+    position : absolute ; 
+    top : .8rem ; 
+    left : 6rem ; 
+
+ }
+
+ .about-content-paragraph::before{
+    content : "<p>" ; 
+    font-family: 'La Belle Aurore',cursive;
+    font-style: italic;
+    color: #515152;
+    font-size: .3rem;
+    position : absolute ; 
+    top : -0.3rem ; 
+    left : -0.3rem ; 
+}
+
+.about-content-paragraph{
+    /* height : auto ; 
+    width : 700px ;  */
+    color : white ; 
+    font-size: .4rem;
+    padding-left : 5px ; 
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    /* background-color: red;*/
+}
+.about-content-paragraph > span{
+    color : yellow ; 
+}
+
+.about-content-paragraph::after{
+    content : "</p>" ; 
+    font-family: 'La Belle Aurore',cursive;
+    font-style: italic;
+    color: #515152;
+    color : white ; 
+    font-size: .3rem;
+    position : absolute ; 
+    /* top : 96% ; 
+    left : -0.3rem ;  */
+    bottom : 0.1rem ;
+    right : 0.2rem ;
+
+}
+
+.about-content-helper-2::before{
+    content : "</body>" ; 
+    font-family: 'La Belle Aurore',cursive;
+    font-style: italic;
+    color: #515152;
+    color : white ; 
+    font-size: .3rem;
+    position : absolute ; 
+    top : 0.6rem  ; 
+    left : -0.6rem ; 
+}
+
+.about-content-helper-2{
+    width : 100px ; 
+    position: relative;
+}
+
+.about-content-helper-2::after{
+    content : "</html>" ; 
+    font-family: 'La Belle Aurore',cursive;
+    font-style: italic;
+    color: #515152;
+    color : white ; 
+    font-size: .3rem;
+    position : absolute ; 
+    top : 1.4rem ; 
+    left : -1rem ;  
+}
+
+
+
+/* right side of about  */
+.about-decoration {
+    height : auto ; 
+    width : 40% ; 
+    
+    box-sizing: border-box;
+    /* border : 1px solid pink ;  */
+    background-color:rgb(31,27,44) ;
+
+    margin : 0px ; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ .about-extra {
+  height : 270px ; 
+  width : 200px ; 
+   /* position: absolute;
+  top : 9% ; 
+  right : 13% ; */
+  overflow: hidden;
+  border-radius : 10px ;
+  box-shadow: 5px 10px 5px black;
+
+} 
+
+.about-extra-tech > img , 
+.about-extra > img { 
+  height : 100% ; 
+  width : 100% ; 
+}
+
+.about-extra-tech{
+  height : 170px ; 
+  width : 200px ; 
+  /* position: absolute;
+  top : 49% ; 
+  right : 13% ; */
+  overflow: hidden;
+  border-radius : 10px ;
+  box-shadow: 5px 10px 5px black;
+  margin-top : 50px ;
+}
+
+
+
