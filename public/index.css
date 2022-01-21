@@ -14,3 +14,12 @@ html {
     }
     
 }
+
+@media  screen and (max-width : 360px) and (max-height : 640px) {
+
+    html {
+        font-size : 40px ; 
+    }
+    
+}
+

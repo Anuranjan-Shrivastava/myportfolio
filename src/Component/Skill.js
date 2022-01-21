@@ -2,6 +2,134 @@ import React, { Component } from 'react';
 import '../Css/Skill.css' ;
 
 class Skill extends Component {
+    constructor(){
+        super() ;
+        this.state = {
+              language : [
+                  {
+                      skill : "C" , 
+                      value : 80
+                  } , 
+                  {
+                      skill : "C++",
+                      value : 80 
+                  },
+                  {
+                      skill : "Javascript" , 
+                      value : 70
+                  } 
+              ] ,
+              web : [
+                {
+                    skill : "HTML" , 
+                    value : 80
+                } ,
+                {
+                    skill : "React.js" , 
+                    value : 80
+                },  
+                {
+                    skill : "CSS",
+                    value : 70 
+                },
+                {
+                    skill : "Javascript" , 
+                    value : 70
+                } , 
+                {
+                    skill : "Node.js",
+                    value : 70 
+                }, 
+                {
+                    skill : "Express.js",
+                    value : 70 
+                }
+              ] , 
+              db : [
+                  {
+                      skill : "Mongodb" , 
+                      value : 75
+                  }
+              ] , 
+              cs : [
+                {
+                    skill : "Data Structure" , 
+                    value : 80
+                },
+                {
+                    skill : "Algorithms" , 
+                    value : 80
+                },
+                {
+                    skill : "OOP" , 
+                    value : 70
+                }
+              ] , 
+              framework : [
+                {
+                    skill : "React.js" , 
+                    value : 80
+                } , 
+                {
+                    skill : "Express.js",
+                    value : 70 
+                }
+              ] , 
+              arr : null ,
+        }
+    }
+    componentDidMount = () => {
+        let arr = [2,4,6] ; 
+        let skillArr = this.state.language ;
+        for(let i = 1 ; i <=6 ; i++){
+            let element = document.getElementById(`${i}`) ;
+            element.style.width ="0px" ;
+            element.textContent = "" ;
+        }
+        for(let i = 0 ; i < arr.length ; i++){
+            let element = document.getElementById(`${arr[i]}`) ;
+            element.style.width = `${skillArr[i].value}%` ;
+            element.textContent = `${skillArr[i].skill}`
+        }
+    }
+   
+    handleChangeSkillGraph = async  (name) => {
+        let arr  ; 
+        let skillArr ; 
+        if(name === "lang"){
+            arr = [2,4,6] ; 
+            skillArr = this.state.language ;
+        }
+        if(name === "web"){
+            arr = [1,2,3,4,5,6] ; 
+            skillArr = this.state.web ;
+        }
+        if(name === "cs"){
+            arr = [2,4,6] ;
+            skillArr = this.state.cs ;
+        } 
+        if(name === "frame"){
+            arr = [3,5] ;
+            skillArr = this.state.framework ;
+        } 
+        if(name === "db"){
+            arr = [4] ; 
+            skillArr = this.state.db ; 
+        }
+        for(let i = 1 ; i <=6 ; i++){
+            let element = document.getElementById(`${i}`) ;
+            element.style.width ="0px" ;
+            element.textContent = "" ;
+        }
+        setTimeout(function(){
+            for(let i = 0 ; i < arr.length ; i++){
+                let element = document.getElementById(`${arr[i]}`) ;
+                element.style.width = `${skillArr[i].value}%` ;
+                element.textContent = `${skillArr[i].skill}` ;
+            }
+        } , 500) ;
+        
+    }
     render() {
         return (
             <div className="skill">
@@ -79,9 +207,45 @@ class Skill extends Component {
                         <div className="skillContainer"></div>
                     </div>
                 </div>
+                <div className='mobileSkill'>
+                    <div className='graph'>
+                         <div className='percentage'>
+                             <div className='mstwenty'></div>
+                             <div className='msforty'></div>
+                             <div className='mssixty'></div>
+                             <div className='mseighty'></div>
+                             <div className='mshundred'></div>
+                         </div>
+                         <div className='graphBars'>
+                             <div className="msone" id="1"></div>
+                             <div className="mstwo" id="2"></div>
+                             <div className="msthree" id="3"></div>
+                             <div className="msfour" id="4"></div>
+                             <div className="msfive" id="5"></div>
+                             <div className="mssix" id="6"></div>
+                         </div>
+                    </div>
+                    <div className='checkBoxes'>
+                       <div className='checkBoxes1'>
+                            <div className='language'
+                                 onClick={() => this.handleChangeSkillGraph("lang")}>Language</div>
+                            <div className='framework'
+                                 onClick={() => this.handleChangeSkillGraph("frame")}>Framework</div>
+                       </div>
+                       <div className='checkBoxes2'>
+                            <div className='db'
+                                 onClick={() => this.handleChangeSkillGraph("db")}>DB</div>
+                            <div className='web'
+                                 onClick={() => this.handleChangeSkillGraph("web")}>WEB</div>
+                            <div className='cs'
+                                 onClick={() => this.handleChangeSkillGraph("cs")}>CS</div>
+                       </div>
+                    </div>
+                </div>
            </div>
         );
     }
 }
 
 export default Skill;
+

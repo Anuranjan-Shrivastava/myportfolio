@@ -138,7 +138,7 @@
 .skillContainer > div{
     height : 100% ; 
     text-align: center;
-    font-size: .5rem;
+    font-size: .4rem;
     background-color: orange;
     line-height : 50px ; 
     transition: .5s;
@@ -163,28 +163,28 @@
 }
 #Nodejs:hover{
     width : 65%  ; 
-    font-size: .7rem;
+    font-size: .6rem;
 }
 #Reactjs{
     width : 15%  ; 
 }
 #Reactjs:hover{
     width : 80%  ; 
-    font-size: .7rem;
+    font-size: .6rem;
 }
 #DataStructure{
     width : 30%  ; 
 }
 #DataStructure:hover{
     width : 80%  ; 
-    font-size: .7rem;
+    font-size: .6rem;
 }
 #Algorithm{
     width : 20%  ; 
 }
 #Algorithm:hover{
     width : 80%  ; 
-    font-size: .7rem;
+    font-size: .6rem;
 }
 
 
@@ -216,19 +216,569 @@
 }
 #Javascript:hover{
     width : 70% ; 
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 }
 #Expressjs{
     width : 20%  ; 
 }
 #Expressjs:hover{
     width : 60% ; 
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 }
 #MongoDB{
     width : 21%  ; 
 }
 #MongoDB:hover{
     width : 60% ; 
-    font-size: 0.7rem;
+    font-size: 0.6rem;
+}
+
+.mobileSkill{
+    display: none;
+}
+
+@media screen and (max-width : 800px) {
+    .skill {
+        height : 100% ; 
+        width : 100% ; 
+        background-color: rgb(31,27,44);
+        box-sizing: border-box;
+    }
+    .smallSkill{
+        display: none;
+    }
+    .mobileSkill {
+        display: block;
+        height : 100% ; 
+        width : 100% ; 
+        background-color: rgb(31,27,44);
+    }
+    .graph{
+        height : 85% ; 
+        width : 100% ; 
+        /* background-color: brown; */
+        background-color: rgb(31,27,44);
+
+        display: flex;
+        flex-direction: column;
+       
+
+        transition: .2s;
+
+    }
+
+    .percentage {
+        height : 10px ; 
+        width : 100% ; 
+        /* background-color: white; */
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: row;
+    }
+    .percentage>div {
+       box-sizing: border-box;
+       height : 100% ; 
+       width : 20% ; 
+   
+    }
+
+    .mstwenty::after {
+        content : "20%" ;
+        font-size : 12px ;
+        color : whitesmoke ; 
+        position: relative;
+        top : -250% ; 
+        right : -75% ; 
+    }
+    .msforty::after {
+        content : "40%" ;
+        font-size : 12px ;
+        color : whitesmoke ; 
+        position: relative;
+        top : -250% ; 
+        right : -75% ; 
+    }
+    .mssixty::after {
+        content : "60%" ;
+        font-size : 12px ;
+        color : whitesmoke ; 
+        position: relative;
+        top : -250% ; 
+        right : -75% ; 
+    }
+    .mseighty::after {
+        content : "80%" ;
+        font-size : 12px ;
+        color : whitesmoke ; 
+        position: relative;
+        top : -250% ; 
+        right : -75% ; 
+    }
+    .mshundred::after {
+        content : "100%" ;
+        font-size : 12px ;
+        color : whitesmoke ; 
+        position: relative;
+        top : -250% ; 
+        right : -56% ; 
+    }
+
+   
+    .graphBars {
+        width : 100% ; 
+        height : 97.7% ;
+        background-color: rgb(31,27,44);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+   
+
+    .graphBars>div {
+        border-top-right-radius: 20px ;
+        border-bottom-right-radius: 20px ;
+        margin-top : 10px ; 
+        height : 12% ; 
+        width : 100px ; 
+        color : white ;
+        transition: .2s;
+        text-align: center;
+        font-size : 15px ; 
+        line-height: 50px;
+        font-family: 'Mochiy Pop P One', sans-serif;
+        box-sizing: border-box;
+        border : 1px solid white ; 
+    }
+    .msone{
+        background-color: green;
+    }
+    .mstwo{
+        background-color: blue;
+    }
+    .msthree{
+        background-color: rebeccapurple;
+    }
+    .msfour{
+        background-color: rgba(191, 191, 12, 0.864);
+    }
+    .msfive{
+        background-color: darkcyan;
+    }
+    .mssix{
+        background-color: rgba(5, 10, 99, 0.741);
+    }
+
+
+   
+
+
+
+
+    .checkBoxes{
+      
+        font-size : 20px ; 
+        box-sizing: border-box;
+    }
+    .checkBoxes2 , 
+    .checkBoxes1{
+        height : 50% ; 
+        box-sizing: border-box;
+    }
+    .checkBoxes2 > div , 
+    .checkBoxes1 > div {
+        height: 100% ;
+        display: inline-block;
+        box-sizing: border-box;
+        text-align: center;
+        border : 1px solid black ; 
+        font-size : 25px ; 
+        cursor: pointer;
+        color : white ; 
+        margin : 1.5px ; 
+        
+    }
+    .language {
+        width: 45% ; 
+    }
+    .framework {
+        width : 50% ; 
+    }
+    .db{
+        width : 32% ; 
+    }
+    .web {
+        width : 32% ; 
+    }
+    .cs{
+        width : 32% ; 
+    }
+   
+}
+
+@media screen and (max-width : 375px) and (max-height : 667px){
+    .skill {
+        height : 100% ; 
+        width : 100% ; 
+        background-color: rgb(31,27,44);
+        box-sizing: border-box;
+    }
+    .smallSkill{
+        display: none;
+    }
+    .mobileSkill {
+        display: block;
+        height : 100% ; 
+        width : 100% ; 
+        background-color: rgb(31,27,44);
+    }
+    .graph{
+        height : 85% ; 
+        width : 100% ; 
+        /* background-color: brown; */
+        background-color: rgb(31,27,44);
+
+        display: flex;
+        flex-direction: column;
+       
+
+        transition: .2s;
+
+    }
+
+    .percentage {
+        height : 10px ; 
+        width : 100% ; 
+        /* background-color: white; */
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: row;
+    }
+    .percentage>div {
+       box-sizing: border-box;
+       height : 100% ; 
+       width : 20% ; 
+   
+    }
+
+    .mstwenty::after {
+        content : "20%" ;
+        font-size : 12px ;
+        color : whitesmoke ; 
+        position: relative;
+        top : -250% ; 
+        right : -75% ; 
+    }
+    .msforty::after {
+        content : "40%" ;
+        font-size : 12px ;
+        color : whitesmoke ; 
+        position: relative;
+        top : -250% ; 
+        right : -75% ; 
+    }
+    .mssixty::after {
+        content : "60%" ;
+        font-size : 12px ;
+        color : whitesmoke ; 
+        position: relative;
+        top : -250% ; 
+        right : -75% ; 
+    }
+    .mseighty::after {
+        content : "80%" ;
+        font-size : 12px ;
+        color : whitesmoke ; 
+        position: relative;
+        top : -250% ; 
+        right : -75% ; 
+    }
+    .mshundred::after {
+        content : "100%" ;
+        font-size : 12px ;
+        color : whitesmoke ; 
+        position: relative;
+        top : -250% ; 
+        right : -56% ; 
+    }
+
+   
+    .graphBars {
+        width : 100% ; 
+        height : 97.7% ;
+        background-color: rgb(31,27,44);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+   
+
+    .graphBars>div {
+        border-top-right-radius: 20px ;
+        border-bottom-right-radius: 20px ;
+        margin-top : 10px ; 
+        height : 12% ; 
+        width : 100px ; 
+        color : white ;
+        transition: .2s;
+        text-align: center;
+        font-size : 15px ; 
+        line-height: 50px;
+        font-family: 'Mochiy Pop P One', sans-serif;
+        box-sizing: border-box;
+        border : 1px solid white ; 
+    }
+    .msone{
+        background-color: green;
+    }
+    .mstwo{
+        background-color: blue;
+    }
+    .msthree{
+        background-color: rebeccapurple;
+    }
+    .msfour{
+        background-color: rgba(191, 191, 12, 0.864);
+    }
+    .msfive{
+        background-color: darkcyan;
+    }
+    .mssix{
+        background-color: rgba(5, 10, 99, 0.741);
+    }
+
+
+   
+
+
+
+
+    .checkBoxes{
+      
+        font-size : 20px ; 
+        box-sizing: border-box;
+    }
+    .checkBoxes2 , 
+    .checkBoxes1{
+        height : 50% ; 
+        box-sizing: border-box;
+    }
+    .checkBoxes2 > div , 
+    .checkBoxes1 > div {
+        height: 100% ;
+        display: inline-block;
+        box-sizing: border-box;
+        text-align: center;
+        border : 1px solid black ; 
+        font-size : 25px ; 
+        cursor: pointer;
+        color : white ; 
+        margin : 1.5px ; 
+        
+    }
+    .language {
+        width: 45% ; 
+    }
+    .framework {
+        width : 50% ; 
+    }
+    .db{
+        width : 32% ; 
+    }
+    .web {
+        width : 32% ; 
+    }
+    .cs{
+        width : 32% ; 
+    }
+   
+}
+
+
+
+@media screen and (max-width : 360px) and (max-height : 640px){
+    .skill {
+        height : 100% ; 
+        width : 100% ; 
+        background-color: rgb(31,27,44);
+        box-sizing: border-box;
+    }
+    .smallSkill{
+        display: none;
+    }
+    .mobileSkill {
+        display: block;
+        height : 100% ; 
+        width : 100% ; 
+        background-color: rgb(31,27,44);
+    }
+    .graph{
+        height : 85% ; 
+        width : 100% ; 
+        /* background-color: brown; */
+        background-color: rgb(31,27,44);
+
+        display: flex;
+        flex-direction: column;
+       
+
+        transition: .2s;
+
+    }
+
+    .percentage {
+        height : 10px ; 
+        width : 100% ; 
+        /* background-color: white; */
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: row;
+    }
+    .percentage>div {
+       box-sizing: border-box;
+       height : 100% ; 
+       width : 20% ; 
+   
+    }
+
+    .mstwenty::after {
+        content : "20%" ;
+        font-size : 12px ;
+        color : whitesmoke ; 
+        position: relative;
+        top : -250% ; 
+        right : -75% ; 
+    }
+    .msforty::after {
+        content : "40%" ;
+        font-size : 12px ;
+        color : whitesmoke ; 
+        position: relative;
+        top : -250% ; 
+        right : -75% ; 
+    }
+    .mssixty::after {
+        content : "60%" ;
+        font-size : 12px ;
+        color : whitesmoke ; 
+        position: relative;
+        top : -250% ; 
+        right : -75% ; 
+    }
+    .mseighty::after {
+        content : "80%" ;
+        font-size : 12px ;
+        color : whitesmoke ; 
+        position: relative;
+        top : -250% ; 
+        right : -75% ; 
+    }
+    .mshundred::after {
+        content : "100%" ;
+        font-size : 12px ;
+        color : whitesmoke ; 
+        position: relative;
+        top : -250% ; 
+        right : -56% ; 
+    }
+
+    .msone{
+        background-color: violet;
+    }
+
+    .graphBars {
+        width : 100% ; 
+        height : 97.7% ;
+        background-color: rgb(31,27,44);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+   
+
+    .graphBars>div {
+        border-top-right-radius: 20px ;
+        border-bottom-right-radius: 20px ;
+        margin-top : 10px ; 
+        height : 12% ; 
+        width : 100px ; 
+        color : white ;
+        transition: .2s;
+        text-align: center;
+        font-size : 15px ; 
+        line-height: 50px;
+        font-family: 'Mochiy Pop P One', sans-serif;
+    }
+    .msone{
+        background-color: green;
+    }
+    .mstwo{
+        background-color: blue;
+    }
+    .msthree{
+        background-color: rebeccapurple;
+    }
+    .msfour{
+        background-color: rgba(191, 191, 12, 0.864);
+    }
+    .msfive{
+        background-color: darkcyan;
+    }
+    .mssix{
+        background-color: rgba(5, 10, 99, 0.741);
+    }
+
+
+   
+
+
+
+
+    .checkBoxes{
+      
+        font-size : 20px ; 
+        box-sizing: border-box;
+    }
+    .checkBoxes2 , 
+    .checkBoxes1{
+        height : 50% ; 
+        box-sizing: border-box;
+    }
+    .checkBoxes2 > div , 
+    .checkBoxes1 > div {
+        height: 100% ;
+        display: inline-block;
+        box-sizing: border-box;
+        text-align: center;
+        border : 1px solid black ; 
+        font-size : 25px ; 
+        cursor: pointer;
+        color : white ; 
+        margin : 1.5px ; 
+        
+    }
+    .language {
+        width: 45% ; 
+    }
+    .framework {
+        width : 50% ; 
+    }
+    .db{
+        width : 32% ; 
+    }
+    .web {
+        width : 32% ; 
+    }
+    .cs{
+        width : 32% ; 
+    }
+   
 }

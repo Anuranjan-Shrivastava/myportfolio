@@ -3,6 +3,7 @@
     width : 100% ; 
     box-sizing: border-box;
     background-color: rgb(35,34,52);
+   
     font-size : .2rem ;
 }
 
@@ -49,6 +50,11 @@
 
     font-family: 'Caveat', cursive;
 }
+
+.navigator {
+    display: none;
+}
+
 .navigation-difftab > div { 
     height : 50px ; 
     width : 100% ; 
@@ -63,16 +69,126 @@
      /* upated css after root(html) font fixing */
      font-size : .6rem ; 
 }
+.navigation-difftab i{
+    display : none ; 
+}
 
-/* @media  screen and (max-width : 1320px) {
+@media screen and (max-width : 1150px){
+    .navigation{
+        height : 100% ; 
+        width : 100% ; 
+        box-sizing: border-box;
+        background-color: rgb(35,34,52);
+       
+        font-size : .2rem ;
 
-    .navigation-home {
-        /* upated css after root(html) font fixing 
-        font-size : 1.1rem ; 
-    }
-    .navigation-difftab > div { 
-         /* upated css after root(html) font fixing 
-         font-size : .5rem ; 
+        /* improvise */
+        background-color: rgb(31,27,44);
+        /* addition */
+        padding-left : 10px ; 
+        padding-right : 10px ; 
+        padding-bottom : 10px ; 
+        position : relative ;
     }
     
-} */
+    .navigation-home {
+        height : 120px ; 
+        width : 100% ; 
+
+        box-sizing: border-box;
+
+        font-family: 'Sansita Swashed', cursive;
+        font-size : 1.3rem ; 
+        text-align: center;
+        line-height: 120px;
+        color : white ; 
+
+        /* improvise */
+        height : 1rem ; 
+        width : 1rem ; 
+        font-size : .6rem ; 
+        line-height:  1rem ;
+        /* addition */
+        background-color: rgb(35,34,52);
+        border-radius: 50% ;
+        box-shadow: 5px 10px 5px black;
+
+    }
+
+    .navigation-difftab {
+        height : 300px ; 
+        width : 100% ; 
+        box-sizing: border-box;
+    
+        margin-top : 80px ; 
+    
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: column;
+    
+        font-family: 'Caveat', cursive;
+
+        /* improvise */
+        height : 90% ; 
+        width : 1.85rem ; 
+
+        display : block ;
+        margin-top : 0px ; 
+
+        /* addition */
+        position: absolute;
+        top : 0% ; 
+        right : 0% ; 
+        /* background-color: yellow; */
+        border-radius : 50% ; 
+        margin-right : 10px ; 
+      
+    }
+
+    .navigation-difftab span {
+        display: none;
+    }
+    .navigator {
+        display: block;
+    }
+
+    .navigation-difftab i {
+        display: block;
+    }
+
+    .navigation-difftab > div { 
+        height : 50px ; 
+        width : 100% ; 
+    
+        text-align: center;
+        line-height: 50px;
+        font-size : .6rem ; 
+    
+        transition : .1s ;
+    
+        /* improvise */
+        height : 1rem ; 
+        width : 1rem ;
+        line-height : 70px ;
+        font-size : .5rem ;
+
+        /* addition */
+        box-sizing: border-box;
+        position : absolute ; 
+        right : 0% ; 
+        top : 0% ; 
+        background-color: rgb(35,34,52);
+        padding-top : .26rem ; 
+        border-radius: 50%;
+        margin-right : 1px ; 
+        box-shadow: 5px 10px 5px black;
+        cursor: pointer;
+    }
+
+    #plus {
+        z-index: 5;
+    }
+
+    
+}
+
