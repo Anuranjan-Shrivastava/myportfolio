@@ -18,13 +18,11 @@ class Contact extends Component {
         this.setState({
             [field] : value
         })
-        console.log(field , value) ;
+       
     }
    
     handleSendMessage = (e) => {
-        return ;
         e.preventDefault() ;
-        console.log("Inside handle Send Message") ;
         const node = this.myRef.current;
         console.log(node) ;
         emailjs.sendForm('service_cjiwl5g', 'template_5wvim5g', node , 'user_Hmeci3CJ2FPY6UpsjFpDX')

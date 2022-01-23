@@ -55,7 +55,6 @@ class Navigation extends Component {
     }
    
     render() {
-        let wd = window.innerWidth ; 
         return (
             <div className="navigation" style={{"color" : "white"}}>
                
@@ -118,8 +117,3 @@ class Navigation extends Component {
 
 export default Navigation;
 
-{/*
-<i class="fas fa-envelope-square"></i>
-<i class="fas fa-tools"></i> 
-<i class="fas fa-info-circle"></i>
-<i class="fas fa-laptop-code"></i>*/}

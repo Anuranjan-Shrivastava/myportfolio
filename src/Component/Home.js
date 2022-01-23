@@ -7,7 +7,7 @@ class Home extends Component {
         var abcd = document.getElementsByClassName('abcd') ;
         for(let i = 0 ; i < abcd.length ; i++){
             abcd[i].addEventListener('onMouseEnter' , function() {
-                console.log("Mouse Ghusa") ;
+               
                 abcd[i].classList.add("animate__animated") ;
                 abcd[i].classList.add("animate__rubberBand") ;
                 setTimeout(function() {
@@ -19,7 +19,6 @@ class Home extends Component {
     }
 
     handleMouseMove = (event) => {
-        console.log("Mouse Moving") ;
         var eye = document.querySelectorAll('.eye') ;
         eye.forEach(function(eye){
             let x = eye.getBoundingClientRect().left + (eye.clientWidth/2) ;

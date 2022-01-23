@@ -32,7 +32,6 @@ class About extends Component {
         if(field === "books"){
             let frame = document.getElementsByClassName('about-extra')[0] ;
             let photo = frame.children[0] ;
-            console.log("Mouse Aaya") ;
             await this.setState({
                 slider : this.sliderfunction(photo , "books")
             })
@@ -40,7 +39,6 @@ class About extends Component {
         else{
             let frame = document.getElementsByClassName('about-extra-tech')[0] ;
             let photo = frame.children[0] ;
-            console.log("Mouse Aaya") ;
             await this.setState({
                 slider : this.sliderfunction(photo ,"tech")
             })
@@ -49,7 +47,6 @@ class About extends Component {
     }
 
     stopSlideShow = async (field) => {
-        console.log("Mouse Bahar")
         clearInterval(this.state.slider) ;
             await this.setState({
                 slider : null 
