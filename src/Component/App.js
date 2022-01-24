@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../Css/App.css' ; 
-import { Home , Navigation , About , Education , Skill , THome  , Contact , Extra , Project} from './index' ;
+import { Navigation , About , Education , Skill , THome  , Contact , Extra , Project} from './index' ;
 import {BrowserRouter as Router ,Route, Routes} from 'react-router-dom' ;
 
 class App extends Component {
