@@ -1,0 +1,227 @@
+.tabout{
+   height : 100% ; 
+   width : 100% ; 
+   overflow : hidden ;
+   background-color: rgb(31,27,44);
+
+}
+.tabout-content {
+    height : 100% ; 
+    width : 100.7% ; 
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+
+    display: flex;
+    flex-direction: row;
+
+    font-size : 40px ; 
+    color : white ; 
+}
+
+.tabout-detail {
+    height : 100% ; 
+    width : 60% ; 
+    box-sizing: border-box;
+    /* border : 1px solid white ;  */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tabout-detail > div {
+    min-height : 100px ; 
+    box-sizing: border-box;
+    /* border : 1px solid white ;  */
+}
+
+.tabout-content-helper-1::before{
+    content : "<html>" ; 
+    font-size : 0.4em ; 
+    position: relative;
+ }
+.tabout-content-helper-1::after{
+    content : "<body>" ; 
+    font-size : 0.4em ; 
+    position : relative ; 
+    top : 20% ; 
+    left : -2% ; 
+
+ }
+
+
+ /* heading and h1 tag  */
+.tabout-content-heading::before {
+    content : "<h1>" ; 
+    font-family: 'La Belle Aurore',cursive;
+    font-style: italic;
+    color: #515152;
+    font-size: 0.2em;
+
+    /* position trial */
+    position: absolute;
+ }
+.tabout-content-heading {
+    color : rgb(5,253,216) ; 
+    font-size : 2em ; 
+    padding-left : 0.5em ;
+}
+.tabout-content-heading::after {
+    content : "</h1>" ; 
+    font-family: 'La Belle Aurore',cursive;
+    font-style: italic;
+    color: #515152;
+    font-size: 0.2em;
+
+    /* position trial */
+    position: relative;
+    top : 0% ; 
+ }
+
+ /* css around paragaph */
+ .tabout-content-paragraph::before{
+    content : "<p>" ; 
+    font-family: 'La Belle Aurore',cursive;
+    font-style: italic;
+    /* color: #515152; */
+    color : white ; 
+    font-size: 0.8em;
+    position : relative ; 
+    top : -8% ; 
+  
+ }
+.tabout-content-paragraph{
+    font-family: 'Playfair Display', serif;
+    font-size : 0.6em ; 
+
+    padding-left : 0.6em ; 
+    padding-right : 20px ; 
+}
+.tabout-content-paragraph::after{
+    content : "</p>" ; 
+    font-family: 'La Belle Aurore',cursive;
+    font-style: italic;
+    /* color: #515152; */
+    color : white ; 
+    font-size: 0.8em;
+    position : relative ; 
+    top : 0% ; 
+  
+ }
+.tabout-content-paragraph span {
+    color : yellow ;
+}
+
+/* now helper div to close tag */
+.tabout-content-helper-2::before{
+    content : "</body>" ; 
+    font-size : 0.4em ; 
+    position : relative ; 
+    top : 0% ; 
+    left : 5% ; 
+   
+}
+.tabout-content-helper-2{
+    position: relative;
+}
+.tabout-content-helper-2::after{
+    content : "</html>" ; 
+    font-size : 0.4em ; 
+    position : absolute  ;
+    top : 45% ; 
+    left : 0% ; 
+    
+   
+}
+
+@media  screen and (max-width : 1320px ) {
+    .tabout-content {
+        height : 100% ; 
+        width : 100.7% ; 
+        overflow-x: hidden;
+        overflow-y: scroll;
+    
+    
+        display: flex;
+        flex-direction: row;
+    
+        font-size : 37px ; 
+        color : white ; 
+
+    }
+
+    .tabout-detail {
+        height : 100% ; 
+        width : 100% ; 
+        box-sizing: border-box;
+        /* border : 1px solid white ;  */
+    
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+@media  screen and (max-width : 1150px ) {
+    .tabout-content {
+        height : 100% ; 
+        width : 100.7% ; 
+        overflow-x: hidden;
+        overflow-y: scroll;
+    
+    
+        display: flex;
+        flex-direction: row;
+    
+        font-size : 36px ; 
+        color : white ; 
+
+    }
+
+    .tabout-detail {
+        height : 100% ; 
+        width : 100% ; 
+        box-sizing: border-box;
+        /* border : 1px solid white ;  */
+    
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width : 800px) {
+    .tabout-content {
+        height : 100% ; 
+        width : 100.7% ; 
+        overflow-x: hidden;
+        overflow-y: scroll;
+    
+    
+        display: flex;
+        flex-direction: row;
+    
+        font-size : 40px ; 
+        color : white ; 
+
+        /* improvise */
+        font-size : 33px ; 
+
+    }
+
+    .tabout-detail > div {
+        min-height : 60px ; 
+        box-sizing: border-box;
+        /* border : 1px solid white ;  */
+    }
+
+    .tabout-detail {
+        height : 100% ; 
+        width : 100% ; 
+        box-sizing: border-box;
+        border : 1px solid white ; 
+    
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -75,7 +75,7 @@ class Skill extends Component {
                     value : 70 
                 }
               ] , 
-              arr : null ,
+              arr : ["language","framework","db","web","cs"] ,
         }
     }
     componentDidMount = () => {
@@ -91,9 +91,11 @@ class Skill extends Component {
             element.style.width = `${skillArr[i].value}%` ;
             element.textContent = `${skillArr[i].skill}`
         }
+        let elementClass = this.state.arr[0] ;
+        document.getElementsByClassName(elementClass)[0].style.backgroundColor = "red" ;
     }
    
-    handleChangeSkillGraph = async  (name) => {
+    handleChangeSkillGraph = async  (name , idx) => {
         let arr  ; 
         let skillArr ; 
         if(name === "lang"){
@@ -115,6 +117,13 @@ class Skill extends Component {
         if(name === "db"){
             arr = [4] ; 
             skillArr = this.state.db ; 
+        }
+        let classes = this.state.arr ; 
+        for(let i = 0 ; i < 5 ; i++){
+            let elementClass = classes[i] ;
+            console.log(elementClass) ;
+            document.getElementsByClassName(elementClass)[0].style.backgroundColor = "transparent" ;
+            if(i === idx)document.getElementsByClassName(elementClass)[0].style.backgroundColor = "red" ;
         }
         for(let i = 1 ; i <=6 ; i++){
             let element = document.getElementById(`${i}`) ;
@@ -228,17 +237,17 @@ class Skill extends Component {
                     <div className='checkBoxes'>
                        <div className='checkBoxes1'>
                             <div className='language'
-                                 onClick={() => this.handleChangeSkillGraph("lang")}>Language</div>
+                                 onClick={() => this.handleChangeSkillGraph("lang" , 0)}>Language</div>
                             <div className='framework'
-                                 onClick={() => this.handleChangeSkillGraph("frame")}>Framework</div>
+                                 onClick={() => this.handleChangeSkillGraph("frame" , 1)}>Framework</div>
                        </div>
                        <div className='checkBoxes2'>
                             <div className='db'
-                                 onClick={() => this.handleChangeSkillGraph("db")}>DB</div>
+                                 onClick={() => this.handleChangeSkillGraph("db" , 2)}>DB</div>
                             <div className='web'
-                                 onClick={() => this.handleChangeSkillGraph("web")}>WEB</div>
+                                 onClick={() => this.handleChangeSkillGraph("web" , 3)}>WEB</div>
                             <div className='cs'
-                                 onClick={() => this.handleChangeSkillGraph("cs")}>CS</div>
+                                 onClick={() => this.handleChangeSkillGraph("cs" , 4)}>CS</div>
                        </div>
                     </div>
                 </div>

@@ -7,6 +7,7 @@ import Contact from './Contact' ;
 import Extra from './Extra';
 import Project from './Project';
 import THome from './THome';
+import TAbout from './TAbout' ;
 
 export {
     Home ,
@@ -15,6 +16,6 @@ export {
     Education , 
     Skill  , 
     Contact , 
-    Extra , Project , THome
+    Extra , Project , THome , TAbout
     
 }

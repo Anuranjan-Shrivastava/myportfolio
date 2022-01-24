@@ -393,7 +393,7 @@
         display: inline-block;
         box-sizing: border-box;
         text-align: center;
-        border : 1px solid black ; 
+        /* border : 1px solid black ;  */
         font-size : 25px ; 
         cursor: pointer;
         color : white ; 
@@ -574,7 +574,7 @@
         display: inline-block;
         box-sizing: border-box;
         text-align: center;
-        border : 1px solid black ; 
+        /* border : 1px solid black ;  */
         font-size : 25px ; 
         cursor: pointer;
         color : white ; 
@@ -758,7 +758,7 @@
         display: inline-block;
         box-sizing: border-box;
         text-align: center;
-        border : 1px solid black ; 
+        /* border : 1px solid black ;  */
         font-size : 25px ; 
         cursor: pointer;
         color : white ; 
