@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../Css/App.css' ; 
-import { Home , Navigation , About , Education , Skill  , Contact , Extra , Project} from './index' ;
+import { Home , Navigation , About , Education , Skill , THome  , Contact , Extra , Project} from './index' ;
 import {BrowserRouter as Router ,Route, Routes} from 'react-router-dom' ;
 
 class App extends Component {
@@ -13,7 +13,7 @@ class App extends Component {
             </div>
             <div className="center">
               <Routes>
-                <Route exact={true} path="/" element={<Home/>} />
+                <Route exact={true} path="/" element={<THome/>} />
                 <Route exact={true} path="/skill"  element={<Skill/>} />
                 <Route exact={true} path="/education" element={<Education/>} />
                 <Route exact={true} path="/about" element={<About/>} />

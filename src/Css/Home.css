@@ -37,7 +37,7 @@
     min-height : 1.4rem ; 
     width : 6.5rem ;  
     box-sizing: border-box;
-    /* border : 1px solid white ; */
+    border : 1px solid white ;
   
     /* background-color: beige; */
 
@@ -119,6 +119,7 @@
 
     /* updated css */
     font-size : 1.8rem ;
+    border : 1px solid black ; 
    
 }
 .name span{
@@ -155,6 +156,7 @@
     /* updated css to make responsive */
     font-size : 1rem ;
     position: relative;
+    border : 1px solid rgb(157, 140, 140) ; 
   
 
     /* background-color: yellow; */
@@ -406,9 +408,8 @@
         right : 5% ; 
         
 
-        /* improvise */
-        border : 2px solid white ; 
-        /* addition */
+         /* improvise */
+         display : none ; 
        
     }
     
@@ -630,6 +631,9 @@
         position : absolute ; 
         top : 0% ; 
         right : 0% ; 
+
+          /* improvise */
+          display : none ; 
     }
     
     .eye{
@@ -849,6 +853,9 @@
         position : absolute ; 
         top : 0% ; 
         right : 0% ; 
+
+          /* improvise */
+          display : none ; 
     }
     
     .eye{
@@ -1068,6 +1075,10 @@
         position : absolute ; 
         top : 0% ; 
         right : 0% ; 
+
+
+        /* improvise */
+        display : none ; 
     }
     
     .eye{
