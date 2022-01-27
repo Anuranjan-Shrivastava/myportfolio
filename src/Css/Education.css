@@ -139,6 +139,14 @@
     right: -7%;
 } 
 
+.education1{
+    display: none;
+}
+.driver {
+    display: none;
+}
+/* deleting all height related media queries */
+
 @media screen and (max-width : 800px){
   
     .education{
@@ -155,6 +163,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+
+        /* addition */
     }
     .circle1{
         height : 33% ; 
@@ -177,6 +188,10 @@
         border-bottom : 15px dashed white ; 
         border-right : none ;
         border-radius: 5%;
+
+        /* addition  */
+        display : none ;
+
     }
     
     .circle1-detail { 
@@ -229,6 +244,9 @@
         position: absolute;
         top: 15px ;
         left: -25px;
+
+        top : 50% ; 
+        left : -4.5% ; 
     }
     
     /* circle two */
@@ -254,6 +272,9 @@
          border-left : none ;
          border-right : 15px dashed white ;  
          border-radius: 5%;
+
+            /* addition  */
+        display : none ;
     }
     .circle2-detail{
         height : 80px ; 
@@ -328,6 +349,9 @@
          border-left : 15px dashed white ; 
          border-top : 15px dashed black ; 
          border-radius: 5%;
+
+            /* addition  */
+        display : none ;
     }
     
     .circle3-detail{
@@ -387,10 +411,37 @@
         right: -7%;
         display: none;
     } 
+
+    .education1{
+        height : 75% ; 
+        width : 80% ; 
+        background-color: burlywood;
+        box-sizing: border-box;
+        border-bottom : 8px dashed black ;
+        position: relative;
+
+        display: block;
+    }
+
+    .traveller {
+        position: absolute;
+        bottom : 0% ; 
+        left : 0% ; 
+        color : yellow ; 
+       transition: .7s;
+       
+    }
+
+    .driver {
+        letter-spacing: 10px ;
+        color : white ; 
+        margin-top : 5px ; 
+        display: block;
+    }
 }
 
 
-@media screen and (max-width : 412px) and (max-height : 850px){
+@media screen and (max-width : 412px) {
   
     .education{
         height : 100% ; 
@@ -428,6 +479,9 @@
         border-bottom : 15px dashed white ; 
         border-right : none ;
         border-radius: 5%;
+
+         /* addition  */
+         display : none ;
     }
     
     .circle1-detail { 
@@ -503,6 +557,9 @@
          border-left : none ;
          border-right : 15px dashed white ;  
          border-radius: 5%;
+
+          /* addition  */
+        display : none ;
     }
     .circle2-detail{
         height : 80px ; 
@@ -576,6 +633,9 @@
          border-left : 15px dashed white ; 
          border-top : 15px dashed black ; 
          border-radius: 5%;
+
+          /* addition  */
+        display : none ;
     }
     
     .circle3-detail{
@@ -636,7 +696,7 @@
     } 
 }
 
-@media screen and (max-width : 375px) and (max-height : 667px){
+@media screen and (max-width : 375px) {
   
     .education{
         height : 100% ; 
@@ -674,6 +734,9 @@
         border-bottom : 15px dashed white ; 
         border-right : none ;
         border-radius: 5%;
+
+         /* addition  */
+         display : none ;
     }
     
     .circle1-detail { 
@@ -749,6 +812,9 @@
          border-left : none ;
          border-right : 15px dashed white ;  
          border-radius: 5%;
+
+          /* addition  */
+        display : none ;
     }
     .circle2-detail{
         height : 80px ; 
@@ -822,6 +888,9 @@
          border-left : 15px dashed white ; 
          border-top : 15px dashed black ; 
          border-radius: 5%;
+
+          /* addition  */
+        display : none ;
     }
     
     .circle3-detail{
@@ -883,7 +952,7 @@
 }
 
 
-@media screen and (max-width : 360px) and (max-height : 640px){
+@media screen and (max-width : 360px) {
   
     .education{
         height : 100% ; 
@@ -921,6 +990,9 @@
         border-bottom : 15px dashed white ; 
         border-right : none ;
         border-radius: 5%;
+
+         /* addition  */
+         display : none ;
     }
     
     .circle1-detail { 
@@ -996,6 +1068,9 @@
          border-left : none ;
          border-right : 15px dashed white ;  
          border-radius: 5%;
+
+          /* addition  */
+        display : none ;
     }
     .circle2-detail{
         height : 80px ; 
@@ -1069,6 +1144,9 @@
          border-left : 15px dashed white ; 
          border-top : 15px dashed black ; 
          border-radius: 5%;
+
+          /* addition  */
+        display : none ;
     }
     
     .circle3-detail{
