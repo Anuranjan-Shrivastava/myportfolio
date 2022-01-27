@@ -61,6 +61,7 @@
     content : "<html>" ; 
     font-size : 0.4em ; 
     position: relative;
+    font-family: 'Dancing Script', cursive;
  }
 .tabout-content-helper-1::after{
     content : "<body>" ; 
@@ -68,6 +69,7 @@
     position : relative ; 
     top : 20% ; 
     left : -2% ; 
+    font-family: 'Dancing Script', cursive;
 
  }
 
@@ -75,7 +77,7 @@
  /* heading and h1 tag  */
 .tabout-content-heading::before {
     content : "<h1>" ; 
-    font-family: 'La Belle Aurore',cursive;
+    font-family: 'Dancing Script', cursive;
     font-style: italic;
     color: #515152;
     font-size: 0.2em;
@@ -90,7 +92,7 @@
 }
 .tabout-content-heading::after {
     content : "</h1>" ; 
-    font-family: 'La Belle Aurore',cursive;
+    font-family: 'Dancing Script', cursive;
     font-style: italic;
     color: #515152;
     font-size: 0.2em;
@@ -103,7 +105,7 @@
  /* css around paragaph */
  .tabout-content-paragraph::before{
     content : "<p>" ; 
-    font-family: 'La Belle Aurore',cursive;
+    font-family: 'Dancing Script', cursive;
     font-style: italic;
     /* color: #515152; */
     color : white ; 
@@ -121,7 +123,7 @@
 }
 .tabout-content-paragraph::after{
     content : "</p>" ; 
-    font-family: 'La Belle Aurore',cursive;
+    font-family: 'Dancing Script', cursive;
     font-style: italic;
     /* color: #515152; */
     color : white ; 
@@ -141,7 +143,7 @@
     position : relative ; 
     top : 0% ; 
     left : 5% ; 
-   
+    font-family: 'Dancing Script', cursive;
 }
 .tabout-content-helper-2{
     position: relative;
@@ -152,7 +154,7 @@
     position : absolute  ;
     top : 50% ; 
     left : 0% ; 
-    
+    font-family: 'Dancing Script', cursive;
    
 }
 

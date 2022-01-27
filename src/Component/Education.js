@@ -8,14 +8,24 @@ class Education extends Component {
             level : 0  
         }
     }
+    componentDidMount = () => {
+        window.addEventListener('resize' , () => {
+            var truck = document.getElementsByClassName('traveller')[0] ;
+            truck.style.left = "0px" ;
+            this.setState({
+                level : 0 
+            }) ; 
+            truck.style.transform = "rotateY(0deg)" ;
+        })
+    }
 
-    moveTraveller = (dir) => {
+    moveTraveller = async (dir) => {
         var truck = document.getElementsByClassName('traveller')[0] ;
         var post = truck.getBoundingClientRect() ;
         var road = document.getElementsByClassName('education1')[0] ;
         var posr = road.getBoundingClientRect() ;
-        console.log(posr) ;
-       
+     
+        
         if(dir === "r"){
             if(this.state.level === 2)return ;
             let w = posr.right - posr.left ;
@@ -26,11 +36,14 @@ class Education extends Component {
                 truck.style.left = `${w-wt}px` ;
             }
             
-            this.setState((prevState) => {
+            await this.setState((prevState) => {
                 return {
                     level : prevState.level + 1 
                 }
-            })
+            }) ;
+            if(this.state.level === 2){
+                truck.style.transform = "rotateY(180deg)" ;
+            }
            
         }else {
             if(this.state.level === 0)return ;
@@ -41,14 +54,18 @@ class Education extends Component {
             }else{
                 truck.style.left = `${0}px` ;
             }
-            this.setState((prevState) => {
+            await this.setState((prevState) => {
                 return {
                     level : prevState.level - 1 
                 }
-            })
+            }) ; 
+            if(this.state.level === 0){
+                truck.style.transform = "rotateY(0deg)" ;
+            }
         }
     }
     render() {
+        const {level} = this.state ; 
         return (
             <div className="education">
                 <div class="circle1">
@@ -73,6 +90,24 @@ class Education extends Component {
                     </div> 
                 </div>
                 <div className='education1'>
+                    {level === 0 && <div className='educard'>
+                           Class 10<sup>th</sup><br/>
+                           C.A.R.E Public School<br/>
+                           (2014-2015)<br/>
+                           CGPA :- 8.4
+                    </div>}
+                    {level === 1 && <div className='educard'>
+                           Class 12<sup>th</sup><br/>
+                           C.A.R.E Public School<br/>
+                           (2016-2017)<br/>
+                           Score :- 80%
+                    </div>}
+                   {level === 2 &&  <div className='educard'>
+                           Bachelor of Engineering<br/>
+                           GEC Bilaspur<br/>
+                           (2018-2022)<br/>
+                           CGPA :- 7.7*
+                    </div>}
                     <div className="traveller"><i class="fas fa-truck"></i></div>
                 </div>
                 <div className="driver">

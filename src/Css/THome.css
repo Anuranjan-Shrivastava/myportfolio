@@ -34,6 +34,7 @@
     content : "<html>" ; 
     font-size : 0.4em ; 
     position: relative;
+    font-family: 'Dancing Script', cursive;
  }
 .home-content-main-helper1 {
    height : 100px ; 
@@ -47,7 +48,7 @@
     position : relative ; 
     top : 20% ; 
     left : -2% ; 
-
+    font-family: 'Dancing Script', cursive;
  }
 .home-content-main-greet {
    min-height : 100px ; 
@@ -144,7 +145,8 @@
     font-size : 0.4em ; 
     position: relative;
     top : -20% ; 
-    left : 3% ; 
+    left : 3% ;
+    font-family: 'Dancing Script', cursive; 
 
 
  }
@@ -160,7 +162,7 @@
     position : absolute ; 
     top : 20% ; 
     left : 0% ; 
-
+    font-family: 'Dancing Script', cursive;
  }
 
 
@@ -178,6 +180,7 @@
 
         /* addition */
         font-size : 0.7em ;
+        background-color: rgb(31,27,44);
     }
 }
 

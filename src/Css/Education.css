@@ -415,12 +415,27 @@
     .education1{
         height : 75% ; 
         width : 80% ; 
-        background-color: burlywood;
+        /* background-color: burlywood; */
         box-sizing: border-box;
-        border-bottom : 8px dashed black ;
+        border-bottom : 8px dashed white ;
         position: relative;
 
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size : 40px ; 
+    }
+
+    .educard{
+        height : 70% ; 
+        width :  70% ; 
+        background-color: lightgoldenrodyellow;
+
+        text-align: center;
+        font-size : 1em ;
+        font-family: 'Supermercado One', cursive;
+        /* color : white ;  */
     }
 
     .traveller {
@@ -428,7 +443,8 @@
         bottom : 0% ; 
         left : 0% ; 
         color : yellow ; 
-       transition: .7s;
+        transition: .7s;
+        font-size : .8rem ;
        
     }
 
@@ -437,6 +453,7 @@
         color : white ; 
         margin-top : 5px ; 
         display: block;
+        font-size : 1em ;
     }
 }
 
@@ -694,6 +711,48 @@
         right: -7%;
         display: none;
     } 
+
+    .education1{
+        height : 75% ; 
+        width : 80% ; 
+        background-color: burlywood;
+        box-sizing: border-box;
+        border-bottom : 8px dashed black ;
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size : 30px ; 
+    }
+    .educard{
+        height : 70% ; 
+        width :  70% ; 
+        background-color: lightgoldenrodyellow;
+
+        text-align: center;
+        font-size : 1em ;
+        font-family: 'Supermercado One', cursive;
+    }
+
+    .traveller {
+        position: absolute;
+        bottom : 0% ; 
+        left : 0% ; 
+        color : yellow ; 
+        transition: .7s;
+        font-size : .8em ;
+       
+    }
+
+    .driver {
+        letter-spacing: 10px ;
+        color : white ; 
+        margin-top : 5px ; 
+        display: block;
+        font-size : .8em ;
+    }
 }
 
 @media screen and (max-width : 375px) {
@@ -949,6 +1008,48 @@
         right: -7%;
         display: none;
     } 
+
+    .education1{
+        height : 75% ; 
+        width : 80% ; 
+        background-color: burlywood;
+        box-sizing: border-box;
+        border-bottom : 8px dashed black ;
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size : 26px ; 
+    }
+    .educard{
+        height : 70% ; 
+        width :  70% ; 
+        background-color: lightgoldenrodyellow;
+
+        text-align: center;
+        font-size : 1em ;
+        font-family: 'Supermercado One', cursive;
+    }
+
+    .traveller {
+        position: absolute;
+        bottom : 0% ; 
+        left : 0% ; 
+        color : yellow ; 
+        transition: .7s;
+        font-size : .8em ;
+       
+    }
+
+    .driver {
+        letter-spacing: 10px ;
+        color : white ; 
+        margin-top : 5px ; 
+        display: block;
+        font-size : 1em ;
+    }
 }
 
 
@@ -1205,4 +1306,18 @@
         right: -7%;
         display: none;
     } 
+    .education1{
+        height : 75% ; 
+        width : 80% ; 
+        background-color: burlywood;
+        box-sizing: border-box;
+        border-bottom : 8px dashed black ;
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size : 25px ; 
+    }
 }
