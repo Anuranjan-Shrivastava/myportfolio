@@ -715,9 +715,9 @@
     .education1{
         height : 75% ; 
         width : 80% ; 
-        background-color: burlywood;
+        /* background-color: burlywood; */
         box-sizing: border-box;
-        border-bottom : 8px dashed black ;
+        border-bottom : 8px dashed white ;
         position: relative;
 
         display: flex;
@@ -1012,9 +1012,9 @@
     .education1{
         height : 75% ; 
         width : 80% ; 
-        background-color: burlywood;
+        /* background-color: burlywood; */
         box-sizing: border-box;
-        border-bottom : 8px dashed black ;
+        border-bottom : 8px dashed white ;
         position: relative;
 
         display: flex;
@@ -1309,9 +1309,9 @@
     .education1{
         height : 75% ; 
         width : 80% ; 
-        background-color: burlywood;
+        /* background-color: burlywood; */
         box-sizing: border-box;
-        border-bottom : 8px dashed black ;
+        border-bottom : 8px dashed white ;
         position: relative;
 
         display: flex;
