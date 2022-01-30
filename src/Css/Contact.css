@@ -41,7 +41,7 @@
 
 #senderName {
     height : 50px ; 
-    width : 300px ; 
+    width : 350px ; 
    
 }
 
@@ -54,7 +54,7 @@
 
 #senderContact {
     height : 50px ; 
-    width : 250px ; 
+    width : 350px ; 
 
 }
 textarea { 
@@ -128,11 +128,11 @@ textarea {
    }
    #senderName {
         height : 50px ; 
-        width : 300px ; 
+        width : 350px ; 
 
         /* improvise */
         height : 10% ; 
-        width : 30% ; 
+        width : 70% ; 
     }
     #senderEmail {
         height : 50px ; 
@@ -140,15 +140,15 @@ textarea {
         
         /* improvise */
         height : 10% ; 
-        width : 30% ; 
+        width : 70% ; 
     }
     #senderContact {
         height : 50px ; 
-        width : 250px ; 
+        width : 350px ; 
 
         /* improvise */
         height : 10% ; 
-        width : 30% ; 
+        width : 70% ; 
     }
     #senderMessage {
         resize:  none;
@@ -176,7 +176,7 @@ textarea {
 
         /* improvise */
         height : 10% ; 
-        width : 70% ; 
+        width : 90% ; 
     }
     #senderEmail {
         height : 50px ; 
@@ -184,7 +184,7 @@ textarea {
         
         /* improvise */
         height : 10% ; 
-        width : 70% ; 
+        width : 90% ; 
     }
     #senderContact {
         height : 50px ; 
@@ -192,7 +192,7 @@ textarea {
 
         /* improvise */
         height : 10% ; 
-        width : 70% ; 
+        width : 90% ; 
     }
     #senderMessage {
         resize:  none;
@@ -253,7 +253,7 @@ textarea {
 
         /* improvise */
         height : 10% ; 
-        width : 70% ; 
+        width : 90% ; 
     }
     #senderEmail {
         height : 50px ; 
@@ -261,7 +261,7 @@ textarea {
         
         /* improvise */
         height : 10% ; 
-        width : 70% ; 
+        width : 90% ; 
     }
     #senderContact {
         height : 50px ; 
@@ -269,7 +269,7 @@ textarea {
 
         /* improvise */
         height : 10% ; 
-        width : 70% ; 
+        width : 90% ; 
     }
     #senderMessage {
         resize:  none;
@@ -341,7 +341,7 @@ textarea {
 
         /* improvise */
         height : 10% ; 
-        width : 70% ; 
+        width : 90% ; 
     }
     #senderEmail {
         height : 50px ; 
@@ -349,7 +349,7 @@ textarea {
         
         /* improvise */
         height : 10% ; 
-        width : 70% ; 
+        width : 90% ; 
     }
     #senderContact {
         height : 50px ; 
@@ -357,7 +357,7 @@ textarea {
 
         /* improvise */
         height : 10% ; 
-        width : 70% ; 
+        width : 90% ; 
     }
     #senderMessage {
         resize:  none;
@@ -428,7 +428,7 @@ textarea {
 
         /* improvise */
         height : 10% ; 
-        width : 70% ; 
+        width : 90% ; 
     }
     #senderEmail {
         height : 50px ; 
@@ -436,7 +436,7 @@ textarea {
         
         /* improvise */
         height : 10% ; 
-        width : 70% ; 
+        width : 90% ; 
     }
     #senderContact {
         height : 50px ; 
@@ -444,7 +444,7 @@ textarea {
 
         /* improvise */
         height : 10% ; 
-        width : 70% ; 
+        width : 90% ; 
     }
     #senderMessage {
         resize:  none;

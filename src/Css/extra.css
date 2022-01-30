@@ -1,0 +1,18 @@
+.extra {
+    height: 100%; 
+    width : 100% ; 
+    color : white ;  
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.extra span {
+    font-weight: 900;
+    font-family: 'Lobster', cursive;
+}
+#linky {
+    text-decoration: none;
+}

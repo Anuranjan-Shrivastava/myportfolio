@@ -81,7 +81,7 @@
     content : "<h1>" ; 
     font-family: 'Dancing Script', cursive;
     font-style: italic;
-    color: #515152;
+    color : rgb(131,131,131) ;
     font-size: 0.2em;
 
     /* position trial */
@@ -96,7 +96,7 @@
     content : "</h1>" ; 
     font-family: 'Dancing Script', cursive;
     font-style: italic;
-    color: #515152;
+    color : rgb(131,131,131) ;
     font-size: 0.2em;
 
     /* position trial */
@@ -113,7 +113,8 @@
     color : white ; 
     font-size: 0.8em;
     position : relative ; 
-    top : -8% ; 
+    top : -10% ; 
+    left : 3% ; 
     color : rgb(131,131,131) ;
   
  }
@@ -316,6 +317,22 @@
     
         background-image: url('./to1.jpg');
     }
+}
+@media screen and (max-width : 550px) {
+    .tabout-content-paragraph::before{
+        content : "<p>" ; 
+        font-family: 'Dancing Script', cursive;
+        font-style: italic;
+        /* color: #515152; */
+        color : white ; 
+        font-size: 0.8em;
+        position : relative ; 
+        top : -9% ; 
+        left : 3% ; 
+        color : rgb(131,131,131) ;
+      
+     }
+    
 }
 @media screen and (max-width : 412px) {
     .tabout-content {

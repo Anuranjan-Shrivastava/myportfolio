@@ -132,12 +132,11 @@ class TAbout extends Component {
                                at Government Engineering College Bilaspur(C.G).Enrolled in 
                                Bachelor of Engineering program , currently in 7<sup>th</sup> 
                                &nbsp; semester.Right from the beginning of my college I had huge enthusiasm
-                               for coding & development.I have spent a lot of time learning
+                               for coding & development.I have spent  lot of time learning
                                algorithms.Along with it I learnt full stack web development.
-                               Apart from my studies , I invest a lot of my time in reading
+                               Apart from my studies , I invest  lot of my time in reading
                                books that helps me to improve my work ethic & make me more 
-                               disciplined and consistent.I love watching and playing 
-                               cricket. 
+                               disciplined and consistent.
                                <br/>
                                <span >Thanks for your time for going through my website.</span>
                         </div>

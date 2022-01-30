@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../Css/Contact.css' ;
 import emailjs from 'emailjs-com';
+import { validate } from 'react-email-validator';
 
 class Contact extends Component {
     constructor(){
@@ -25,6 +26,23 @@ class Contact extends Component {
     handleSendMessage = (e) => {
         e.preventDefault() ;
         if(this.state.messageSending === true)return ;
+        const { from_email , contact} = this.state  ;
+        if(validate(from_email) === false){
+            this.acknowledgeUser(2) ; return ;
+        }
+        if(contact.length > 0){
+            if(contact.length !== 10 && contact.length !== 12){
+                this.acknowledgeUser(3) ; return ;
+            }
+            for(let i = 0 ; i < contact.length ; i++){
+                let num = contact.charCodeAt(i) ;
+                if(num < 48 || num > 57){
+                    this.acknowledgeUser(4) ;
+                    return ;
+                }
+            }
+        }
+       
         this.setState({
             messageSending : true 
         })
@@ -60,10 +78,33 @@ class Contact extends Component {
 
             } , 1000) ;
             
-        }else {
+        }else if(status === 0) {
             acknowledge.style.top = "5px" ;
             acknowledge.style.backgroundColor = "red" ;
             acknowledge.textContent = "Try again..!" ;
+            setTimeout(() => {
+                acknowledge.style.top = "-50px" ;
+            } , 1000) ;
+        }else if(status === 2){
+            acknowledge.style.top = "5px" ;
+            acknowledge.style.backgroundColor = "red" ;
+            acknowledge.textContent = "Invalid email" ;
+            setTimeout(() => {
+                acknowledge.style.top = "-50px" ;
+            } , 1000) ;
+        }else if(status === 3){
+            acknowledge.style.top = "5px" ;
+            acknowledge.style.backgroundColor = "red" ;
+            acknowledge.style.fontSize = "20px" ;
+            acknowledge.textContent = "Invalid/Remove +" ;
+            setTimeout(() => {
+                acknowledge.style.top = "-50px" ;
+            } , 1000) ;
+        }else if(status === 4){
+            acknowledge.style.top = "5px" ;
+            acknowledge.style.backgroundColor = "red" ;
+            acknowledge.style.fontSize = "20px" ;
+            acknowledge.textContent = "Only digits allowed" ;
             setTimeout(() => {
                 acknowledge.style.top = "-50px" ;
             } , 1000) ;
@@ -100,7 +141,7 @@ class Contact extends Component {
                  
                     <textarea name="message" id="senderMessage"
                             className='inputTags' 
-                            placeholder=''
+                            placeholder='Contact to work together or to appreciate my work.'
                             required
                             onChange={(e) => this.handleStateChange("message" , e.target.value)}/>
                     <input type="submit" 

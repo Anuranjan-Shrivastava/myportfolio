@@ -42,7 +42,7 @@ class Project extends Component {
             techStack : ["Mongodb" , "Express.js" ,"React.js" , "Node.js"], 
             description : "This is Management web application using which faculty & students can easily perform their task ." , 
             code : true , 
-            codeLink : "https://github.com/28shubham/College_Management" , 
+            codeLink : "https://github.com/Anuranjan-Shrivastava/collegeManagement" , 
             live : false , 
             liveLink : "" ,
             info : false ,  
@@ -92,7 +92,7 @@ class Project extends Component {
                             </div>
                             <div className='project-name'>{project.name}</div>
                             <div className='project-techStack'>
-                                <span style={{"color" : "black"}}>Tech Stack :- &nbsp;</span>
+                                <span style={{"color" : "white"}}>Tech Stack :- &nbsp;</span>
                                 {project.techStack.map((stack , idx) => {
                                     console.log(idx , project.techStack.length) ;
                                     if(idx === project.techStack.length-1){
@@ -106,7 +106,7 @@ class Project extends Component {
                                 })}
                             </div>
                             <div className='project-description'>
-                                {project.description}                               
+                                <span style={{"color" : "yellow","font-size":"20px"}}>" </span>{project.description}<span style={{"color" : "yellow","font-size":"20px"}}> "</span>                               
                             
                             </div>
                             <div className='project-navigation'>

@@ -32,7 +32,7 @@
     /* box-shadow: 5px 5px 5px 5px black ; */
 
   
-    background-color: grey;
+    background-color: transparent;
     color : white ;
    
 }
@@ -51,7 +51,7 @@
 .project-name {
     height : 32px ; 
     width : 100% ; 
-    /* background-color: red; */
+    background-color: rgb(34,34,51);
     font-size : .8em ; 
     text-align: center;
     box-sizing: border-box;
@@ -63,17 +63,17 @@
 .project-techStack {
     width : 100% ; 
     height : auto ; 
-    /* background-color: gold; */
+    background-color: rgb(34,34,51) ; 
     font-size : .6em ; 
     padding-left : 10px ;
     padding-right : 10px ; 
-    /* border-bottom: 2px solid black; */
     box-sizing: border-box; 
-    margin-bottom : 5px ; 
+    border-bottom : 2px solid white ; 
+    color : yellow
     
 }
 .techStackName {
-    font-size : .68em ;
+    font-size : .9em ;
 }
 
 /* project description css */
@@ -85,6 +85,7 @@
     /* border-bottom: 2px solid black; */
     box-sizing: border-box;
     font-family: 'Playfair Display', serif;
+    background-color: rgb(34,34,51) ; 
   
 }
 
@@ -92,7 +93,7 @@
 .project-navigation {
     height : 50px ; 
     width : 100% ; 
-    /* background-color: purple; */
+    background-color: yellow;
     box-sizing: border-box;
 
 
@@ -110,6 +111,7 @@
     font-size : .7em ;
     line-height: 50px;
     text-align: center;
+    color : red ; 
 }
 .project-link {
  
@@ -117,12 +119,14 @@
     font-size : .7em ;
     line-height: 50px;
     text-align: center;
-    color : blue ; 
+    color : black ; 
 }
 
 .project-code a , 
 .project-link a {
     text-decoration: none;
+    color : black ; 
+    font-weight: 600;
 }
 .project-info {
 
@@ -130,7 +134,8 @@
     font-size : .7em ;
     line-height: 50px;
     text-align: center;
-    color : blue ;
+    color : green ;
+    font-weight: 600;
 }
 
 
