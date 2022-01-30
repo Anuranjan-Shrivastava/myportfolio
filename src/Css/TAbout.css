@@ -62,6 +62,7 @@
     font-size : 0.4em ; 
     position: relative;
     font-family: 'Dancing Script', cursive;
+    color : rgb(131,131,131) ;
  }
 .tabout-content-helper-1::after{
     content : "<body>" ; 
@@ -70,6 +71,7 @@
     top : 20% ; 
     left : -2% ; 
     font-family: 'Dancing Script', cursive;
+    color : rgb(131,131,131) ;
 
  }
 
@@ -112,6 +114,7 @@
     font-size: 0.8em;
     position : relative ; 
     top : -8% ; 
+    color : rgb(131,131,131) ;
   
  }
 .tabout-content-paragraph{
@@ -130,6 +133,7 @@
     font-size: 0.8em;
     position : relative ; 
     top : 0% ; 
+    color : rgb(131,131,131) ;
   
  }
 .tabout-content-paragraph span {
@@ -144,6 +148,7 @@
     top : 0% ; 
     left : 5% ; 
     font-family: 'Dancing Script', cursive;
+    color : rgb(131,131,131) ;
 }
 .tabout-content-helper-2{
     position: relative;
@@ -155,6 +160,7 @@
     top : 50% ; 
     left : 0% ; 
     font-family: 'Dancing Script', cursive;
+    color : rgb(131,131,131) ;
    
 }
 

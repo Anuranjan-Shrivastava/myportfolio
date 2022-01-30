@@ -8,8 +8,8 @@
 }
 
 .projectWrapper {
-    height : 600px ; 
-    width : 100% ; 
+    height : 100% ; 
+    width : 101.2% ; 
     background-color:rgb(31,27,44) ;
     display: flex;
     flex-direction: row;
@@ -21,10 +21,108 @@
     overflow-y: scroll;
 }
 .projectWrapper > div {
-    height : 200px ; 
-    width : 200px ; 
+    height : 400px ; 
+    width : 250px ; 
 
-    background-color: green; 
+    background-color: white; 
 
     margin : 50px ; 
+    box-shadow: 5px 5px 5px 5px black ;
+   
 }
+
+/* project Image css */
+.project-image {
+    height : 150px ; 
+    width  : 100% ; 
+    /* background-color: red; */
+}
+.project-image img {
+    height : 100% ; 
+    width : 100% ; 
+}
+/* project name css */
+.project-name {
+    height : 32px ; 
+    width : 100% ; 
+    /* background-color: red; */
+    font-size : 25px ; 
+    text-align: center;
+    box-sizing: border-box;
+    background-color: white; 
+}
+/* project tech Stack  */
+.project-techStack {
+    width : 100% ; 
+    height : auto ; 
+    /* background-color: gold; */
+    font-size : 20px ; 
+    padding-left : 10px ;
+    padding-right : 10px ; 
+    border-bottom: 2px solid black;
+    box-sizing: border-box; 
+    background-color: white; 
+    
+}
+.techStackName {
+    font-size : 18px
+}
+
+/* project description css */
+.project-description {
+    font-size : 18px ; 
+    padding-left : 10px ; 
+    padding-right : 10px ; 
+    /* background-color: greenyellow; */
+    border-bottom: 2px solid black;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    background-color: white; 
+}
+
+/* project navigation css */
+.project-navigation {
+    height : 50px ; 
+    width : 100% ; 
+    /* background-color: purple; */
+    box-sizing: border-box;
+
+
+    display: flex;
+    flex-direction: row;
+    background-color: white; 
+
+}
+.project-navigation > div {
+    width : 100% ; 
+}
+.project-code {
+    
+    box-sizing: border-box;
+    font-size : 25px ;
+    line-height: 50px;
+    text-align: center;
+}
+.project-link {
+ 
+    box-sizing: border-box; 
+    font-size : 25px ;
+    line-height: 50px;
+    text-align: center;
+    color : blue ; 
+}
+
+.project-code a , 
+.project-link a {
+    text-decoration: none;
+}
+.project-info {
+
+    box-sizing: border-box; 
+    font-size : 25px ;
+    line-height: 50px;
+    text-align: center;
+    color : green ;
+}
+
+

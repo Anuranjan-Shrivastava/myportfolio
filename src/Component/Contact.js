@@ -9,7 +9,8 @@ class Contact extends Component {
             message : "" , 
             from_name : "",
             from_email : "" ,
-            contact : ""
+            contact : "", 
+            messageSending : false 
 
         } 
         this.myRef = React.createRef();
@@ -23,17 +24,47 @@ class Contact extends Component {
    
     handleSendMessage = (e) => {
         e.preventDefault() ;
+        if(this.state.messageSending === true)return ;
+        this.setState({
+            messageSending : true 
+        })
         const node = this.myRef.current;
-        console.log(node) ;
         emailjs.sendForm('service_cjiwl5g', 'template_5wvim5g', node , 'user_Hmeci3CJ2FPY6UpsjFpDX')
         .then((result) => {
-            console.log(result.text);
+            this.setState({
+                messageSending : false 
+            })
+            this.acknowledgeUser(1) ;
         }, (error) => {
-            console.log(error.text);
+            this.setState({
+                messageSending : false 
+            })
+            this.acknowledgeUser(0) ;
         });
 
     }
+
+    acknowledgeUser = (status) => {
+        var acknowledge = document.getElementsByClassName('acknowledgment')[0] ;
+        if(status === 1){
+            acknowledge.style.top = "5px" ;
+            acknowledge.style.backgroundColor = "green" ;
+            acknowledge.textContent = "Delivered..!" ;
+            setTimeout(() => {
+                acknowledge.style.top = "-50px" ;
+            } , 1000) ;
+            
+        }else {
+            acknowledge.style.top = "5px" ;
+            acknowledge.style.backgroundColor = "red" ;
+            acknowledge.textContent = "Try again..!" ;
+            setTimeout(() => {
+                acknowledge.style.top = "-50px" ;
+            } , 1000) ;
+        }
+    }
     render() {
+        let {messageSending} = this.state ; 
         return (
             <div className="contact">
                 <form ref={this.myRef} 
@@ -45,26 +76,35 @@ class Contact extends Component {
                            id="senderName"
                            className='inputTags'
                            required
-                           placeholder='Your Name'/><br/>
+                           placeholder='Your Name'
+                           onChange={(e) => this.handleStateChange("from_name" , e.target.value)} /><br/>
                     
                     <input type="email" name="from_email" 
                             id="senderEmail"
                             className='inputTags'
                             required
-                            placeholder='Your Email'/><br/>
+                            placeholder='Your Email'
+                            onChange={(e) => this.handleStateChange("from_email" , e.target.value)}/><br/>
                     
                     <input type="text" name="contact" 
                             id="senderContact"
                             className='inputTags'
-                            placeholder='Your Contact Number'/><br/>
+                            placeholder='Your Contact Number'
+                            onChange={(e) => this.handleStateChange("contact" , e.target.value)}/><br/>
                  
                     <textarea name="message" id="senderMessage"
                             className='inputTags' 
-                            placeholder='Keep your message short'
-                            required/>
-                    <input type="submit" value="Send Message !" 
-                           id="sendButton"/>
+                            placeholder=''
+                            required
+                            onChange={(e) => this.handleStateChange("message" , e.target.value)}/>
+                    <input type="submit" 
+                           value={messageSending ? "Sending...": "Send Message !"} 
+                           id="sendButton"
+                           />
                </form>
+               <div className='acknowledgment'>
+                  
+               </div>
             </div>
         );
     }
