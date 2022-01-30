@@ -27,7 +27,11 @@
     background-color: white; 
 
     margin : 50px ; 
-    box-shadow: 5px 5px 5px 5px black ;
+    /* box-shadow: 5px 5px 5px 5px black ; */
+
+  
+    background-color: grey;
+    color : white ;
    
 }
 
@@ -49,7 +53,7 @@
     font-size : 25px ; 
     text-align: center;
     box-sizing: border-box;
-    background-color: white; 
+    margin-bottom : 5px ; 
 }
 /* project tech Stack  */
 .project-techStack {
@@ -59,9 +63,9 @@
     font-size : 20px ; 
     padding-left : 10px ;
     padding-right : 10px ; 
-    border-bottom: 2px solid black;
+    /* border-bottom: 2px solid black; */
     box-sizing: border-box; 
-    background-color: white; 
+    margin-bottom : 10px ; 
     
 }
 .techStackName {
@@ -74,10 +78,10 @@
     padding-left : 10px ; 
     padding-right : 10px ; 
     /* background-color: greenyellow; */
-    border-bottom: 2px solid black;
+    /* border-bottom: 2px solid black; */
     box-sizing: border-box;
     font-family: 'Playfair Display', serif;
-    background-color: white; 
+  
 }
 
 /* project navigation css */
@@ -90,7 +94,7 @@
 
     display: flex;
     flex-direction: row;
-    background-color: white; 
+  
 
 }
 .project-navigation > div {
@@ -122,7 +126,13 @@
     font-size : 25px ;
     line-height: 50px;
     text-align: center;
-    color : green ;
+    color : blue ;
 }
+
+
+
+/* New Project Css */
+
+
 
 

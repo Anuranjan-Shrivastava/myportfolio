@@ -9,7 +9,7 @@ class Project extends Component {
     constructor(){
         super() ;
         this.state = {
-            projects : []
+           projects : []
         }
     }
     UNSAFE_componentWillMount(){
@@ -53,7 +53,7 @@ class Project extends Component {
             techStack : ["React.js"], 
             description : "This is  movie app where user can search a movie & mark it favourite ." , 
             code : true , 
-            codeLink : "https://github.com/28shubham/College_Management" , 
+            codeLink : "https://github.com/Anuranjan-Shrivastava/movieApp" , 
             live : false , 
             liveLink : "" ,
             info : false ,  
@@ -77,25 +77,27 @@ class Project extends Component {
             }
         } , 500) ;
     }
+
     render() {
         const { projects } = this.state ;
         return (
             <div className='project'>
                <div className='projectWrapper'>
-                   {projects.map((project) => {
-                       return (
+                 
+                    {projects.map((project) => {
+                    return (
                         <div>
                             <div className='project-image'>
                                 <img src={project.image} alt="ProjectPic" />
                             </div>
                             <div className='project-name'>{project.name}</div>
                             <div className='project-techStack'>
-                                <span style={{"color" : "grey"}}>Tech Stack :- &nbsp;</span>
+                                <span style={{"color" : "black"}}>Tech Stack :- &nbsp;</span>
                                 {project.techStack.map((stack , idx) => {
                                     console.log(idx , project.techStack.length) ;
                                     if(idx === project.techStack.length-1){
                                         return (
-                                            <span className='techStackName'>{stack}</span>
+                                            <span className='techStackName'>{stack}.</span>
                                         )
                                     }
                                     return (
@@ -105,7 +107,7 @@ class Project extends Component {
                             </div>
                             <div className='project-description'>
                                 {project.description}                               
-                                
+                            
                             </div>
                             <div className='project-navigation'>
                                 {project.code && <div className='project-code'>
@@ -121,8 +123,8 @@ class Project extends Component {
                                 {project.info && <div className='project-info'>Will be live soon<span id="dots">.</span></div>}
                             </div>
                         </div>
-                       )
-                   })}
+                        )
+                    })}
                    
                    
                </div>
@@ -133,7 +135,3 @@ class Project extends Component {
 }
 
 export default Project;
-
-//   
-//     
-// <div className='project-info'>Will be live soon<span>....</span></div>
