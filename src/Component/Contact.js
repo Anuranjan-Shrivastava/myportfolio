@@ -50,8 +50,14 @@ class Contact extends Component {
             acknowledge.style.top = "5px" ;
             acknowledge.style.backgroundColor = "green" ;
             acknowledge.textContent = "Delivered..!" ;
+            var tages = document.getElementsByTagName('input') ; 
+            for(let i = 0 ; i < tages.length-1 ; i++){
+                tages[i].value = "" ;
+            }
+            document.getElementsByTagName('textarea')[0].value = "" ;
             setTimeout(() => {
                 acknowledge.style.top = "-50px" ;
+
             } , 1000) ;
             
         }else {

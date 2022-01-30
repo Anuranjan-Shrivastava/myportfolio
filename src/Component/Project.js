@@ -38,7 +38,7 @@ class Project extends Component {
         }
         var project3 = {
             image : p3 , 
-            name : "College Mang.",
+            name : "College Manag.",
             techStack : ["Mongodb" , "Express.js" ,"React.js" , "Node.js"], 
             description : "This is Management web application using which faculty & students can easily perform their task ." , 
             code : true , 
