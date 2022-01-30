@@ -7,12 +7,29 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-size : 40px ; 
 }
 
 .extra span {
     font-weight: 900;
     font-family: 'Lobster', cursive;
+   
 }
 #linky {
     text-decoration: none;
+}
+
+@media screen and (max-width : 412px) {
+    .extra span {
+        font-weight: 900;
+        font-family: 'Lobster', cursive;
+        font-size : 30px ; 
+    }
+}
+@media screen and (max-width : 360px) {
+    .extra {
+        font-weight: 900;
+        font-family: 'Lobster', cursive;
+        font-size : 20px ; 
+    }
 }

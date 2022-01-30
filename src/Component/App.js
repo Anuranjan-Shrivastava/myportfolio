@@ -13,13 +13,14 @@ class App extends Component {
             </div>
             <div className="center">
               <Routes>
+                
                 <Route exact={true} path="/" element={<THome/>} />
                 <Route exact={true} path="/skill"  element={<Skill/>} />
                 <Route exact={true} path="/education" element={<Education/>} />
                 <Route exact={true} path="/about" element={<TAbout/>} />
                 <Route exact={true} path="/contact" element={<Contact/>} />
                 <Route exact={true} path="/project" element={<Project/>} />
-                <Route path="/*" element={<Extra/>}></Route>
+                <Route path="/" element={<Extra/>}></Route>
               </Routes>
             </div>
         </div>
