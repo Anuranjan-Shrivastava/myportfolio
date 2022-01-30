@@ -53,7 +53,9 @@
     font-size : 25px ; 
     text-align: center;
     box-sizing: border-box;
-    margin-bottom : 5px ; 
+    margin-bottom : 0px ; 
+    text-decoration: underline;
+    text-decoration-color: yellow;
 }
 /* project tech Stack  */
 .project-techStack {
@@ -65,7 +67,7 @@
     padding-right : 10px ; 
     /* border-bottom: 2px solid black; */
     box-sizing: border-box; 
-    margin-bottom : 10px ; 
+    margin-bottom : 5px ; 
     
 }
 .techStackName {
