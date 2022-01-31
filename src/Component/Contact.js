@@ -96,7 +96,7 @@ class Contact extends Component {
             acknowledge.style.top = "5px" ;
             acknowledge.style.backgroundColor = "red" ;
             acknowledge.style.fontSize = "20px" ;
-            acknowledge.textContent = "Invalid/Remove +" ;
+            acknowledge.textContent = "Invalid Contact" ;
             setTimeout(() => {
                 acknowledge.style.top = "-50px" ;
             } , 1000) ;
