@@ -20,7 +20,7 @@ class App extends Component {
                 <Route exact={true} path="/about" element={<TAbout/>} />
                 <Route exact={true} path="/contact" element={<Contact/>} />
                 <Route exact={true} path="/project" element={<Project/>} />
-                <Route exact={true} path="/*" element={<Extra/>} />
+                <Route path="/*" element={<Extra/>} />
               </Routes>
             </div>
         </div>
