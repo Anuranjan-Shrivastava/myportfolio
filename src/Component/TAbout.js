@@ -95,7 +95,7 @@ class TAbout extends Component {
                     var image = books[index] ;
                     photo.setAttribute('src',image) ;
                     index++ ; 
-            },500) ;
+            },1000) ;
         }else {
             var tech = this.state.arrT ;
             let index = 0 ; 
@@ -128,17 +128,18 @@ class TAbout extends Component {
                                     <span class="about-content-heading-letter">,</span>
                         </div>
                         <div class="tabout-content-paragraph">
-                               Hey folks , I am a student of Computer Science & Engineering
-                               at Government Engineering College Bilaspur(C.G).Enrolled in 
-                               Bachelor of Engineering program , currently in 7<sup>th</sup> 
-                               &nbsp; semester.Right from the beginning of my college I had huge enthusiasm
-                               for coding & development.I have spent  lot of time learning
-                               algorithms.Along with it I learnt full stack web development.
-                               Apart from my studies , I invest  lot of my time in reading
-                               books that helps me to improve my work ethic & make me more 
-                               disciplined and consistent.
-                               <br/>
-                               <span >Thanks for your time for going through my website.</span>
+                            Hey folks , I am a Computer Science professional with strong inclination 
+                            towards coding & software development. To upscale this enthusiasm I have 
+                            been gaining text book knowledge as well as practical application by enrolling 
+                            in the Bachelor of Engineering (CSE) program at Government Engineering College
+                            Bilaspur (CG). Having completed the seventh semester, I have realized my 
+                            growing passion towards learning full stack web development and have 
+                            invested ample time in learning about algorithms. 
+                            I am also an avid reader about topics such as life skills, work ethics and 
+                            stuff like that.
+                        
+                            <br/>
+                            <span >Please explore my website to know more and thanks for your time.</span>
                         </div>
                         <div class="tabout-content-helper-2">
 
